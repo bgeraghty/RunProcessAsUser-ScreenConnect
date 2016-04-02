@@ -8,7 +8,7 @@ On the Host page of the web interface, input sent to the "Commands" Tab of any W
 Description:
 The console program I wrote to accomplish this is called "rpau.exe" (Run Process As User). It was written in PureBasic 5.41, and accomplishes this goal with very small footprint on the system (19kb).  I placed a copy of it in the C:\Windows directory (PATH) to be able to run it from the Command Tab by simply calling it by name:
 
-C:\Windows\system32]rpau
+C:\Windows\system32>rpau
 
 Error: No Options / Parameters Given.
 
@@ -21,7 +21,7 @@ Syntax1: rpau.exe --hidden "[ProgramName]" "[CmdLineArgs]" "[WorkingDirectory]"
        : to specify [WorkingDirectory] without specifying [CmdLineArgs],
        : [CmdLineArgs] must still be passed as: "". (Empty String).
 
-Example: rpau.exe "cmd.exe" "/c ipconfig ] test.txt" "C:\ProgramData"
+Example: rpau.exe "cmd.exe" "/c ipconfig > test.txt" "C:\ProgramData"
 
 
 Syntax2: rpau.exe --username
